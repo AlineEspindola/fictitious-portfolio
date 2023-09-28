@@ -34,26 +34,49 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Personalidade</a>
+                  <a class="nav-link" href="#" id="nav" >Personalidade</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Jornada</a>
+                  <a class="nav-link" href="#" id="nav" >Jornada</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Habilidades</a>
+                  <a class="nav-link" href="#" id="nav" >Habilidades</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Projetos</a>
+                  <a class="nav-link" href="#" id="nav" >Projetos</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Contatos</a>
+                  <a class="nav-link" href="#" id="nav" >Contatos</a>
                 </li>
               </ul>
             </div>
         </nav>
 
+        <!-- Sublimar o nav -->
+        <script>
+          const nav=document.getElementById("nav");
+
+          nav.addEventListener("mouseover", function(){
+              console.log("Funcionou");
+              
+              console.log(nav.value)
+              nav.value.style.color="red";
+              nav.style.borderBottonWitdh="1px";
+              nav.style.borderBottonStyle="solid";
+              nav.style.borderBottonColor="blue";
+
+          });
+            
+        </script>
+
         <main>
-            <h2>Eu sou Designer UI</h2>
+            <div class="conteudo float-left">
+              <h2>Eu sou Designer UI</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officia, sint laudantium aut dolorem placeat labore voluptates vel.</p>
+            </div>
+              <div class="imagem float-right">
+              <img class="img-fluid" src="images/imageinicio.png" alt="Desenho">
+            </div>
         </main>
 
     </div>

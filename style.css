@@ -35,6 +35,38 @@ a{
 h2{
     font-size: 7.6875rem; 
     font-family: 'Forum', cursive;
-    max-width: 30%;
+    max-width: 100%;
+    padding: 20%;
+    padding-bottom: 1.5%;
+}
+
+p{
+    padding-left: 20%;
+    max-width: 85%;
+    font-family: 'Forum', cursive;
+    font-size: 1.5625rem; 
+}
+
+.conteudo{
+    max-width: 50%;
+}
+
+.imagem{
     padding: 10%;
 }
+
+/* Funções JS */
+
+/* Sublinhado do nav */
+
+/* Alguns detalhes do responsivo */
+@media screen and (max-width: 1100px){
+    h2{
+        font-size: 4.5rem;
+    }
+    p{
+        font-size: 1.5rem;
+        max-width: 90%;
+    }
+}
+
