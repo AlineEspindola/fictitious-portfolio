@@ -54,19 +54,17 @@
 
         <!-- Sublimar o nav -->
         <script>
-          const nav=document.getElementById("nav");
+          const nav=document.getElementsByTagName("a");
 
-          nav.addEventListener("mouseover", function(){
-              console.log("Funcionou");
-              
-              console.log(nav.value)
-              nav.style.color="red";
-              nav.style.borderBottonWitdh="1px";
-              nav.style.borderBottonStyle="solid";
-              nav.style.borderBottonColor="blue";
+          for(let i=1; i<nav.length; i++){
+            nav[i].addEventListener("mouseover", function(){
+                nav[i].style.borderBottom="1px solid black";
+            })
+            nav[i].addEventListener("mouseout", function(){
+                nav[i].style.borderBottom="none";
+            })
+          }
 
-          });
-            
         </script>
 
         <main>
