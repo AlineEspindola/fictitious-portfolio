@@ -58,9 +58,6 @@ p{
 /* Funções JS */
 
 /* Sublinhado do nav */
-#id{
-    transition: opacity 0.5s linear;
-}
 
 /* Alguns detalhes do responsivo */
 @media screen and (max-width: 1100px){
