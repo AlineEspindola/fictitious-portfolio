@@ -77,7 +77,7 @@
           const modal=document.querySelector('.modal')
           const body=document.querySelector("body");
           const fechar=document.querySelector('.fechar')
-          aux1=true;
+          aux=true;
 
           for(let i=1; i<nav.length; i++){
 
@@ -85,7 +85,7 @@
              nav[i].addEventListener("click", function(){
               modal.style.display="block"
               body.classList.add("corpo")
-              aux1=false
+              aux=false
             })
 
             // Sublinhar o Nav
@@ -93,7 +93,7 @@
                 nav[i].style.borderBottom="1px solid black"
             })
             nav[i].addEventListener("mouseout", function(){
-                if(aux1==true){
+                if(aux==true){
                   nav[i].style.borderBottom="none"
                 }
             })
@@ -103,7 +103,7 @@
               modal.style.display="none"
               body.classList.remove("corpo")
               nav[i].style.borderBottom="none"
-              aux1=true
+              aux=true
             })
           }
 
@@ -112,22 +112,19 @@
           const p2=document.querySelector(".texto2");
           const texto1="Sou uma designer de interfaces de usuário (UI) com uma paixão profunda por criar experiências digitais envolventes e esteticamente agradáveis. Minha jornada no mundo do design começou quando cursei um curso técnico de informática no IFSC, onde fui introduzida ao vasto e fascinante universo da computação. Durante esse período, minha curiosidade pelo design de interfaces foi despertada.";
           const texto2="Essa paixão me levou a buscar conhecimento e aprimoramento, e então decidi cursar Ciência da Computação na renomada Universidade Federal de Santa Catarina (UFSC). Durante minha graduação, mergulhei fundo nos aspectos teóricos e práticos da computação, o que me proporcionou uma compreensão sólida dos fundamentos tecnológicos";
-          const intervalo=50;
-          aux2=false;
+          const intervalo=40; 
 
           function animacaoTexto1(p1, texto1, intervalo){
             const letra1=texto1.split("").reverse();
-
             const digitador1=setInterval(()=>{
 
               if(!letra1.length){
-                return clearInterval(digitador1);
-                console.log(letra1)
-                aux2=true;
+                clearInterval(digitador1);
+                animacaoTexto2(p2, texto2, intervalo);
+                return;
               }
 
               const proximo1=letra1.pop();
-
               p1.innerHTML+=proximo1;
 
             }, intervalo)
@@ -138,24 +135,20 @@
 
           function animacaoTexto2(p2, texto2, intervalo){
             const letra2=texto2.split("").reverse();
-
             const digitador2=setInterval(()=>{
 
               if(!letra2.length){
-                return clearInterval(digitador2);
+                clearInterval(digitador2);
+                fechar.style.display="inline";
+                return;
               }
 
               const proximo2=letra2.pop();
-
               p2.innerHTML+=proximo2;
 
             }, intervalo)
 
           }
-          
-          //if(aux2==true){
-            animacaoTexto2(p2, texto2, intervalo);
-          //}
 
         </script>
 
