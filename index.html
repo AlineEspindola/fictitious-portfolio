@@ -83,25 +83,27 @@
 
              // Abrir Modal
              nav[i].addEventListener("click", function(){
-              modal.style.display="block";
-              body.classList.add("corpo");
-              aux=false;
+              modal.style.display="block"
+              body.classList.add("corpo")
+              aux=false
             })
 
             // Sublinhar o Nav
             nav[i].addEventListener("mouseover", function(){
-                nav[i].style.borderBottom="1px solid black";
+                nav[i].style.borderBottom="1px solid black"
             })
             nav[i].addEventListener("mouseout", function(){
-                if(aux==false){
-                  nav[i].style.borderBottom="none";
+                if(aux==true){
+                  nav[i].style.borderBottom="none"
                 }
             })
 
             // Fechar Nav
             fechar.addEventListener("click",function(){
-              modal.style.display="none";
-              body.classList.remove("corpo");
+              modal.style.display="none"
+              body.classList.remove("corpo")
+              nav[i].style.borderBottom="none"
+              aux=true
             })
           }
 
