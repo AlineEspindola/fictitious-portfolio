@@ -1,0 +1,72 @@
+body{
+    background-color: #63003A;
+    margin: 30px;
+    text-align: center;
+}
+
+h1, h2{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-size: 50px;
+}
+
+hr{
+    color: black;
+    height: 0.4px;
+    background-color: black;
+}
+
+img{
+    max-width: 100%;
+}
+
+.fotohead{
+    float:left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.container{
+    background-color: #ffffff;
+    max-width: 1600px;
+    padding: 25px;
+    margin:auto; 
+}
+
+p, ul{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.paragrafofinal{
+    margin-bottom: 70px;
+}
+
+footer p{
+    text-align: center;
+    max-width: 1600px;
+    padding: 25px;
+    margin:auto;
+    color: #ffffff;
+}
+
+
+.imagemifsc{
+    margin-top: 30px;
+}
+
+.parisafundovermelho{
+    float: right;
+    margin-bottom: 30px;
+}
+
+a:link, a:visited{
+    color: blue;
+}
+
+
+

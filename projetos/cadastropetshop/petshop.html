@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+    <title>Pet Shop: Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/petshoplogotipo.png" alt="">
+        </header>
+        <form>
+            <fieldset class="cliente">
+                <legend>Dados do Cliente</legend> 
+                <div>
+                    <label for="n">Nome: </label>
+                    <input type="text" name="nome" id="n" placeholder="Digite seu nome" required>
+                </div>
+                <div>
+                    <label for="senha">Senha: </label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                </div>
+                <div>
+                    <label for="telefone">Telefone: </label>
+                    <input type="number" name="telefone" id="telefone" min="0" placeholder="Apenas números" required>
+                </div>
+                <div>
+                    <label for="endereco">Endereço: </label>
+                    <input type="text" name="text" id="text" placeholder="Digite seu endereço" required>
+                </div>
+                <div>
+                    <label for="rg">RG: </label>
+                    <input type="number" name="rg" id="rg" min="0" placeholder="Apenas números" required>
+                </div>
+                <div>
+                    <label for="nascimento">Nascimento: </label>
+                    <input type="date" name="nascimento" id="nascimento" required>
+                </div>
+            </fieldset>
+            <fieldset class="animal">
+                <legend>Dados do Animal</legend> 
+                <div>
+                    <label for="n">Nome: </label>
+                    <input type="text" name="nome" id="n" placeholder="Digite o nome do animal" required>
+                </div>
+                <div>
+                    <p>Escolha qual é o seu animal: </p>
+                    <input type="radio" name="tipo" id="cachorro" value="cachorro">
+                    <label for="cachorro">Cachorro</label>
+                    <input type="radio" name="tipo" id="gato" value="gato">
+                    <label for="gato">Gato</label>
+                    <input type="radio" name="tipo" id="coelho" value="coelho">
+                    <label for="coelho">Coelho</label>
+                    <input type="radio" name="tipo" id="roedor" value="roedor">
+                    <label for="roedor">Roedor</label>
+                </div>
+                <div>
+                    <p>Escolha qual é o porte do seu animal: </p>
+                    <input type="radio" name="tamanho" id="pequeno" value="pequeno">
+                    <label for="pequeno">Pequeno</label>
+                    <input type="radio" name="tamanho" id="medio" value="medio">
+                    <label for="medio">Médio</label>
+                    <input type="radio" name="tamanho" id="grande" value="grande">
+                    <label for="grande">Grande</label>
+                </div>
+                <div>
+                    <label for="raca">Raça: </label>
+                    <input type="raca" name="raca" id="raca" placeholder="Digite a raça do animal" required>
+                </div>
+                <div>
+                    <label for="nascimento">Nascimento: </label>
+                    <input type="date" name="nascimento" id="nascimento" required>
+                </div>
+                <div>
+                    <label for="foto">Foto do animal: </label>
+                    <input type="file" name="foto" id="foto">
+                </div>
+            </fieldset>
+            <fieldset class="servico">
+                <legend>Dados do Serviço</legend> 
+                <div>
+                    <label for="tipo">Tipo: </label>
+                    <select name="tipo" id="tipo">
+                        <option value="ba">Banho</option>
+                        <option value="t">Tosa</option>
+                        <option value="c">Corte de unhas</option>
+                        <option value="lo">Limpeza de ouvidos</option>
+                        <option value="ld">Limpeza de dentes</option>
+                        <option value="h">Hospedagem</option>
+                        <option value="a">Adestramento</option>
+                        <option value="p">Passeio</option>
+                        <option value="te">Terapia</option>
+                        <option value="ld">Consulta</option>
+                    </select>
+                <div>
+                    <p>Escolha qual será a forma de pagamento: </p>
+                    <input type="radio" name="pagamento" id="dinheiro" value="dinheiro">
+                    <label for="dinheiro">Dinheiro</label>
+                    <input type="radio" name="pagamento" id="credito" value="credito">
+                    <label for="credito">Cartão de crédito</label>
+                    <input type="radio" name="pagamento" id="debito" value="debito">
+                    <label for="debito">Cartão de débito</label>
+                    <input type="radio" name="pagamento" id="picpay" value="picpay">
+                    <label for="picpay">PicPay</label>
+                </div>    
+                </div>
+                <div>
+                    <label for="dia">Dia: </label>
+                    <input type="date" name="dia" id="dia" required>
+                </div>
+                <div>
+                    <label for="horario">Horário: </label>
+                    <input type="time" name="horario" id="horario" required>
+                </div>
+                <div>
+                    <p>Gostaria de acessórios/brinquedos para seu animal?</p>
+                    <input type="checkbox" name="coleira" id="coleira">
+                    <label for="coleira">Coleira</label>
+                    <input type="checkbox" name="bola" id="bola">
+                    <label for="bola">Bola</label>
+                    <input type="checkbox" name="roupa" id="roupa">
+                    <label for="roupa">Roupa</label>
+                </div>
+            </fieldset>
+            <div>
+                <input type="submit" value="Cadastrar" class="botao">
+            </div>
+       </form>
+    </div>
+</body>
+</html>

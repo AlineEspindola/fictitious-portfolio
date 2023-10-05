@@ -98,6 +98,7 @@ const h3=document.querySelector(".titulo");
 
 nav[4].addEventListener("click", function(){
     let intervaloProjetos1=10;
+    h3.innerHTML="Selecionando Projeto...";
     for(var i=min; i<=max; i++){
         setTimeout(function(){
         let sorteio= Math.random()*5;
@@ -119,9 +120,9 @@ nav[4].addEventListener("click", function(){
         }else if(textoProjetos.innerHTML==3){
             window.open('projetos/trabalhodeartes');
         }else if(textoProjetos.innerHTML==4){
-            window.open('projetos/alaris_imobiliaria') //não está abrindo
+            window.open('projetos/parisatabriz') //não está abrindo
         }else if(textoProjetos.innerHTML==5){
-            window.open('projetos/chat2023') // não está abrindo
+            window.open('projetos/cadastropetshop/petshop.html') // não está abrindo
         }
         modalProjetos.style.display="none"
         body.classList.remove("corpo")
