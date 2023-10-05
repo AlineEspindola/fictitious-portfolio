@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Freehand&display=swap" rel="stylesheet">
+
+    <title>Aline Espindola</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Aline Espindola</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#" >Personalidade</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#" >Jornada</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#" >Habilidades</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Projetos</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Contatos</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <div class="modalJornada">
+          <div class="conteudo">
+            <h3>Minha Jornada</h3>
+            <p class="texto1"></p>
+            <p class="texto2"></p>
+            <img class="fechar" src="images/fechar.png" alt="Botão de fechar">
+          </div>
+        </div>
+
+        <div class="modalProjetos">
+          <div class="conteudo">
+            <p class="textoProjetos"></p>
+            <h3 class="titulo"></h3>
+          </div>
+        </div>
+
+        <main>
+            <div class="conteudo float-left">
+              <h2>Eu sou Designer UI</h2>
+              <p>Olá, sou uma designer UI apaixonado por criar experiências visuais envolventes e intuitivas. Transformo ideias em interfaces que não apenas agradam aos olhos, mas também encantam os usuários </p>
+            </div>
+              <div class="imagem float-right">
+              <img class="img-fluid" src="images/imageinicio.png" alt="Desenho">
+            </div>
+        </main>
+
+        <script>
+
+          const nav=document.getElementsByTagName("a");
+          const modalProjetos=document.querySelector('.modalProjetos');
+          const modalJornada=document.querySelector('.modalJornada')
+          const body=document.querySelector("body");
+          const fechar=document.querySelector('.fechar')
+          aux=true;
+
+          for(let i=1; i<nav.length; i++){
+
+             // Abrir modals
+             nav[2].addEventListener("click", function(){
+              modalJornada.style.display="block"
+              body.classList.add("corpo")
+              aux=false
+            })
+
+            nav[4].addEventListener("click", function(){
+              modalProjetos.style.display="block"
+              body.classList.add("corpo")
+              aux=false
+            })
+
+
+            // Sublinhar o Nav
+            nav[i].addEventListener("mouseover", function(){
+                nav[i].style.borderBottom="1px solid black"
+            })
+            nav[i].addEventListener("mouseout", function(){
+                if(aux==true){
+                  nav[i].style.borderBottom="none"
+                }
+            })
+
+            // Fechar Nav
+            fechar.addEventListener("click",function(){
+              modalJornada.style.display="none"
+              body.classList.remove("corpo")
+              nav[i].style.borderBottom="none"
+              aux=true
+            })
+          }
+
+          // Jornada
+          // Animação de Digitação do texto
+          const p1=document.querySelector(".texto1");
+          const p2=document.querySelector(".texto2");
+          const texto1="Sou uma designer de interfaces de usuário (UI) com uma paixão profunda por criar experiências digitais envolventes e esteticamente agradáveis. Minha jornada no mundo do design começou quando cursei um curso técnico de informática no IFSC, onde fui introduzida ao vasto e fascinante universo da computação. Durante esse período, minha curiosidade pelo design de interfaces foi despertada.";
+          const texto2="Essa paixão me levou a buscar conhecimento e aprimoramento, e então decidi cursar Ciência da Computação na renomada Universidade Federal de Santa Catarina (UFSC). Durante minha graduação, mergulhei fundo nos aspectos teóricos e práticos da computação, o que me proporcionou uma compreensão sólida dos fundamentos tecnológicos.";
+          const intervaloJornada=40; 
+
+          function animacaoTexto1(p1, texto1, intervaloJornada){
+            const letra1=texto1.split("").reverse();
+            const digitador1=setInterval(()=>{
+
+              if(!letra1.length){
+                clearInterval(digitador1);
+                animacaoTexto2(p2, texto2, intervaloJornada);
+                return;
+              }
+
+              const proximo1=letra1.pop();
+              p1.innerHTML+=proximo1;
+
+            }, intervaloJornada)
+
+          }
+          
+          animacaoTexto1(p1, texto1, intervaloJornada);
+
+          function animacaoTexto2(p2, texto2, intervaloJornada){
+            const letra2=texto2.split("").reverse();
+            const digitador2=setInterval(()=>{
+
+              if(!letra2.length){
+                clearInterval(digitador2);
+                fechar.style.display="inline";
+                return;
+              }
+
+              const proximo2=letra2.pop();
+              p2.innerHTML+=proximo2;
+
+            }, intervaloJornada)
+
+          }
+
+          // Projetos
+          // Aleatorizar números
+          let intervaloProjetos=10;
+          let min=1;
+          let max=30;
+          const textoProjetos=document.querySelector(".textoProjetos");
+          const h3=document.querySelector(".titulo");
+
+          nav[4].addEventListener("click", function(){
+            for(var i=min; i<=max; i++){
+              setTimeout(function(){
+              let sorteio= Math.random()*3;
+              sorteio=Math.ceil(sorteio);
+
+              textoProjetos.innerHTML=sorteio;
+
+            }, i*(intervaloProjetos+=5))
+            }
+            
+          })
+          
+        </script>
+
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
