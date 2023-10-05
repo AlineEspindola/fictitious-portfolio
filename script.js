@@ -121,7 +121,7 @@ nav[4].addEventListener("click", function(){
         }else if(textoProjetos.innerHTML==4){
             window.open('projetos/alaris_imobiliaria') //não está abrindo
         }else if(textoProjetos.innerHTML==5){
-            window.open('projetos/chat2023')
+            window.open('projetos/chat2023') // não está abrindo
         }
         modalProjetos.style.display="none"
         body.classList.remove("corpo")
