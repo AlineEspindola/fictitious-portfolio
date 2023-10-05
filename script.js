@@ -7,37 +7,37 @@ aux=true;
 
 for(let i=1; i<nav.length; i++){
 
-// Abrir modals
-nav[2].addEventListener("click", function(){
-    modalJornada.style.display="block"
-    body.classList.add("corpo")
-    aux=false
-})
+    // Abrir modals
+    nav[2].addEventListener("click", function(){
+        modalJornada.style.display="block"
+        body.classList.add("corpo")
+        aux=false
+    })
 
-nav[4].addEventListener("click", function(){
-    modalProjetos.style.display="block"
-    body.classList.add("corpo")
-    aux=false
-})
+    nav[4].addEventListener("click", function(){
+        modalProjetos.style.display="block"
+        body.classList.add("corpo")
+        aux=false
+    })
 
 
-// Sublinhar o Nav
-nav[i].addEventListener("mouseover", function(){
-    nav[i].style.borderBottom="1px solid black"
-})
-nav[i].addEventListener("mouseout", function(){
-    if(aux==true){
+    // Sublinhar o Nav
+    nav[i].addEventListener("mouseover", function(){
+        nav[i].style.borderBottom="1px solid black"
+    })
+    nav[i].addEventListener("mouseout", function(){
+        if(aux==true){
+            nav[i].style.borderBottom="none"
+        }
+    })
+
+    // Fechar Nav
+    fechar.addEventListener("click",function(){
+        modalJornada.style.display="none"
+        body.classList.remove("corpo")
         nav[i].style.borderBottom="none"
-    }
-})
-
-// Fechar Nav
-fechar.addEventListener("click",function(){
-    modalJornada.style.display="none"
-    body.classList.remove("corpo")
-    nav[i].style.borderBottom="none"
-    aux=true
-})
+        aux=true
+    })
 }
 
 
@@ -58,9 +58,9 @@ function animacaoTexto1(p1, texto1, intervaloJornada){
     const digitador1=setInterval(()=>{
 
     if(!letra1.length){
-    clearInterval(digitador1);
-    animacaoTexto2(p2, texto2, intervaloJornada);
-    return;
+        clearInterval(digitador1);
+        animacaoTexto2(p2, texto2, intervaloJornada);
+        return;
     }
 
     const proximo1=letra1.pop();
@@ -75,9 +75,9 @@ function animacaoTexto2(p2, texto2, intervaloJornada){
     const digitador2=setInterval(()=>{
 
     if(!letra2.length){
-    clearInterval(digitador2);
-    fechar.style.display="inline";
-    return;
+        clearInterval(digitador2);
+        fechar.style.display="inline";
+        return;
     }
 
     const proximo2=letra2.pop();
@@ -112,7 +112,15 @@ nav[4].addEventListener("click", function(){
     }, intervaloProjetos2)
 
     setTimeout(function(){
-        window.open('http://aline.aluno.vip/fashion_finds/', '_blank');
+        if(textoProjetos.innerHTML==1){
+            window.open('http://aline.aluno.vip/fashion_finds/', '_blank');
+        }else if(textoProjetos.innerHTML==2){
+            window.open('projetos/Futebola');
+        }else if(textoProjetos.innerHTML==3){
+            window.open('projetos/trabalhodeartes');
+        }
+        modalProjetos.style.display="none"
+        body.classList.remove("corpo")
+        aux=true
     }, intervaloProjetos3)
-
 })

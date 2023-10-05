@@ -1,0 +1,169 @@
+body{
+    color: #373636;
+    margin: 0;
+    padding: 0;
+    font-size: 60%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F2C641;
+}
+
+main{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    box-shadow: 0 0 13px rgb(161, 161, 161);
+}
+
+.container{
+    margin: auto;
+    padding-top: 13%;
+    width: 85%;
+    background-color: rgb(255, 255, 255);
+}
+
+p{
+    padding-top: 0;
+}
+
+nav{
+    background-color: #F28705;
+    position: fixed;
+    font-size: 340%;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+#criacao,#simbolismo,#autora{
+    padding-top: 120px;
+}
+
+ul{
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+li{
+    display: inline-block;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+h1{
+    font-size: 380%;
+    margin-bottom: 2%;
+    margin-top: 4;
+}
+
+h2{
+    font-size: 300%;
+}
+
+.minhafoto{
+    border-radius: 400px;
+    margin-right: 1%;
+    float: left;
+}
+
+.apresentacao{
+    max-width: 150%;
+    font-weight: bolder;
+    max-width: 18%;
+}
+
+.descricao{
+    font-size: 120%;
+    padding-top: 1%;
+    float: right;
+}
+
+.eu{
+    margin-bottom: 0;
+    max-width: 80%;
+}
+
+.ocupacao{
+    margin-top: 0;
+    font-size: 75%;
+}
+
+.obra{
+    margin-right: 3%;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    float: left;
+}
+
+.texto{
+    margin-top: 12%;
+    font-size: 190%;
+}
+
+.texto2{
+    font-size: 190%;
+}
+
+.codigo{
+    text-align: center;
+}
+
+.fotominha{
+    float: right;
+    margin-left: 2%;
+}
+
+@media screen and (min-width:1400px){
+    .apresentacao{
+        max-width: 16%;
+    }
+    .texto{
+        margin-top: 11%;
+    }
+}
+
+@media screen and (min-width:1600px){
+    .apresentacao{
+        max-width: 13%;
+    }
+    .texto{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width:880px){
+    .obra{
+        float: none;
+    }
+    li img{
+        max-width: 100%; 
+    }
+    li{
+        max-width: 20%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .container{
+        width: 100%;
+    }
+    main{
+        box-shadow: none;
+        margin-top: 15%;
+    }
+    img{
+        width: 100%;
+    }
+    .apresentacao{
+        margin-top: 10%;
+        max-width: 65%;
+        margin-bottom: 50%;
+    }
+    .minhafoto{
+        width: 30%;
+    }
+}
+

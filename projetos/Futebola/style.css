@@ -1,0 +1,1160 @@
+/* Geral -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    max-width: 100%;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    max-width: 100%;
+    margin: 0;
+}
+
+/* Nav -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+ul{
+    justify-content: space-around;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 8%;
+    gap: 30px;
+}
+
+li a:link, li a:visited{
+    color: black;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+}
+
+li{
+    margin-top: 15px;
+}
+
+.logo{
+    margin-top: 0;
+    z-index: 1;
+}
+
+.logo_mobile{
+    display: none;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+/* Início -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#inicio{
+    width: 100%;
+    display: flex;
+}
+
+/* Parte Azul */
+.azul{
+    background: linear-gradient(to bottom right,#000000,#0041AE); 
+    flex-basis: 22%;
+    box-shadow: 100px 0 100px -100px #000000;
+    position: relative;
+}
+
+.suarez{
+    transform: scaleX(-1);
+    position: absolute;
+    bottom: 0px;
+    left: 25%;
+}
+
+.usuarios{
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.usuarios p{
+    margin: 0;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+}
+.usuarios h1{
+    color: #FFC601;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size:400%;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+
+
+/* Parte Amarela */
+.amarelo{
+    background: linear-gradient(to right,#FFC601,#FFFFFF);
+    flex-basis: 26%;
+    max-height: 100%;
+}
+
+
+
+.para{
+    transform: scaleX(-1);
+    bottom: 0px;
+}
+
+/* Parte Branca */
+.branco{
+    height: 100%;
+    flex-basis: 50%;
+    max-height: 100%;
+}
+
+.branco .row .col{
+    padding-bottom: 8%;
+}
+
+.social{
+    float: right;
+    margin-top: 30px;
+    margin-right: -40px;
+}
+
+.col h1{
+    font-size: 600%;
+    font-weight: bolder;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.col-8 h1{
+    margin-left: 10px;
+}
+
+.pro{
+    font-size: 120%;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 150%;
+    color: #04317D;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.col div{
+    margin-left: 10px;
+}
+
+/* Notícias -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#noticias{
+    background-color: black;
+    margin: auto;
+    max-width: 100%;
+    color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+}
+
+.etiqueta_noticias{
+    position: absolute;
+    top: -7%;
+    right: 1%;
+    z-index: 1;
+}
+
+.sec1, .sec2{
+    text-align: center;
+    justify-content: center
+}
+
+.hoje, .titulo_noticias{
+    font-size: 8px;
+    color: #ffc601;
+    margin-top: 12%;
+    margin-left: 12%;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif
+}
+
+.nominhos{
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #ffc601
+}
+
+.titulo_noticias{
+    font-size: 43px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 0
+}
+
+.texto_noticias{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 110%;
+    font-family: 'Exo', sans-serif;
+    text-align: left;
+    margin-left: 12%;
+    width: 80%
+}
+
+.imgs{
+    margin-bottom: 5%;
+    display: flex;
+}
+
+.img1, .img2{
+    flex-basis: 33%;
+}
+
+.img3{
+    flex-basis: 34%;
+}
+
+
+
+.sec1{
+    max-width: 40%
+}
+
+.sec2{
+    padding-top: 5%;
+    padding-right: 4%;
+    padding-bottom: 3%;
+    max-width: 60%
+}
+
+/* Notícias em si */
+.categoria{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 140%;
+}
+
+.notitulo{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 300%;
+    font-weight: bolder;
+}
+
+.desc_noticia{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.primeiro{
+    margin-bottom: 0;
+}
+
+
+.carrossel {
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.pedro{
+    text-align: right;
+    right: 3%;
+}
+
+.rony{
+    text-align: left;
+    left: 3%;
+    top: 3%;
+}
+
+.luxemburgo{
+    text-align: right;
+    right: 2%;
+    top: 3%;
+}
+
+.cano{
+    text-align: left;
+    bottom: 1%;
+    left: 3%;
+}
+
+
+.ney{
+    text-align: left;
+    left: 3%;
+    top: 15%;
+}
+
+.felipao{
+    text-align: left;
+    right: 2%;
+    bottom: 0%;
+}
+
+.grenal{
+    bottom:3%;
+    left: 32%;
+}
+
+.mane, .fenomeno{
+    text-align: left;
+    top: 3%;
+    left: 3%;
+}
+
+
+/* Estatísticas -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#stats{
+    width: 100%;
+    text-align: center;
+}
+
+.tops1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tops2 .col{
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+/* Amarelo e Azul */
+.linha_stat1{
+    background: linear-gradient(to bottom,#FFC601,#FFFFFF);
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.linha_stat2{
+    margin-top: 40px;
+}
+
+.linha_stat3{
+    background: linear-gradient(to top,#04317D,#FFFFFF);
+    width: 100%;
+    padding: 0;
+}
+
+
+/* Títulos e Texto das Estatísticas */
+.grafico{
+    position: absolute;
+    left: 50px;
+    top: 90px;
+}
+
+
+
+.statsp{
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: x-large;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 400%;
+    margin-top: 120px;
+    clear: both;
+    font-weight: bolder;
+}
+
+h4{
+    color: #04317D;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 180%;
+    margin-bottom: 40px;
+}
+
+
+/* As Estatísticas em si */
+
+.estatistica{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 130%;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.top1{
+    font-family: 'Exo', sans-serif;
+    font-weight: bolder;
+    font-size: 120%;
+}
+
+/* Lances -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#lances{
+    min-width: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) , url(img_lances/fundo.webp);
+    background-size: cover;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+}
+
+.rodada_lances{
+    color: white;
+    font-size: 8px;
+    margin-left: 5%;
+    margin-top: 4%;
+    font-weight: bold;
+    text-align: left;
+}
+
+.titulo_lances{
+    margin-left: 5%;
+    color: #ffc601;
+    font-weight: bold;
+}
+
+.etiqueta_lances{
+    position: absolute;
+    top: -2%;
+    right: 6%;
+    z-index: 2;
+}
+
+iframe{
+    min-height: 78%;
+    min-width: 97%;
+    position: absolute;
+    margin-left: 5%;
+}
+
+p{
+    font-size: 14px;
+    font-family: 'Exo', sans-serif
+}
+
+.sec1_lances{
+    max-width: 80%;
+    position: relative;
+}
+
+.sec2_lances{
+    max-width: 20%;
+    background-color: black;
+    color: white
+}
+
+.subtitulo_lances{
+    font-size: 17px;
+    color: #ffc601;
+    font-weight: bold
+}
+
+.texto{
+    margin-bottom: 15%;
+    margin-top: 15%;
+    max-width: 60%;
+    margin-left: 25%
+}
+
+.gabigol{
+    margin-bottom: 65%
+}
+
+.gabigol, .dudu{
+    max-width: 100%;
+}
+
+img{
+    margin: 0
+}
+
+/* Tabela ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#tabela{
+    display: flex;
+}
+
+
+.tri{
+    width: 120%;
+    height: 85%;
+    background: #04317D linear-gradient(to right, #04317D, #000);
+    clip-path: polygon(0% 100%, 0% 0%, 100% 100%);
+    position: absolute;
+    bottom: 0;
+}
+
+.bh1{
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+
+.bh2{
+    display: none;
+}
+
+.tabamarelo{
+    position: relative;
+    flex-basis: 50%;
+    background: linear-gradient(to right,#FFC601,#FFFFFF);
+}
+
+.tab{
+    flex-basis: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.planilha{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+
+/* Títulos e Textos da Tabela */
+.tab h1{
+    font-size: 500%;
+    font-weight: bolder;
+    font-family: 'Exo 2', sans-serif;
+    margin-top: 120px;
+    text-align: left;
+}
+
+.tab h4{
+    margin-left: 60px;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.tab p{
+    font-family: 'Exo', sans-serif;
+    margin-left: 30px;
+    margin-right: 250px;
+    font-size: 130%;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.botao_azul{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+    color: #04317D;
+    border: 1px solid #04317D;
+    border-radius: 6px;
+    box-shadow: 0 0 5px #333;
+    font-size: 250%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 200px;
+    margin-right: 25%;
+}
+
+.botao_azul:hover{
+    transform: scale(1.2);
+}
+
+
+
+/* Tabela Em Si---------------------------------------------------------------------------------------------------------------------------------------------*/
+.modal-dialog{
+    max-width: 800px;
+}
+/* Botão */
+.btn, .btn:hover{
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: bold;
+}
+
+/* Cores das Posições */
+.libertadores{
+    border-left: 3px solid blue;
+}
+
+.qualificatorias{
+    border-left: 3px solid #FA7B17;  
+}
+
+.sulamericana{
+    border-left: 3px solid rgb(31, 197, 16);  
+}
+
+.rebaixamento{
+    border-left: 3px solid red;  
+}
+
+/* Legenda */
+.legenda{
+    text-align: left;
+}
+
+.flex{
+    display: flex;
+}
+
+.linha_tabela{
+    display: flex;
+    width:50%;
+    min-width: 25%;
+}
+
+.linha_tabela p{
+    margin: 0;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    min-width: 10px;
+    border-radius: 50%;
+    margin-right: 3%;
+    margin-top: 2.5%;
+}
+
+
+
+.legenda_libertadores{
+    background-color: blue;
+}
+
+.legenda_pre{
+    background-color: #FA7B17;
+}
+
+.legenda_sulamericana{
+    background-color: rgb(31, 197, 16);
+}
+
+.legenda_rebaixamento{
+    background-color: red;
+}
+
+/*- Rodapé ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>*/
+#rodape{
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+    background-color: black;
+    box-shadow: 0 0 5px #333;
+}
+
+#rodape .row{
+    display: flex;
+}
+
+.rodape_logo{
+    flex-basis: 20%;
+    max-width: 10%;
+}
+
+.contato{
+    flex-basis: 30%;
+    font-family: 'Exo', sans-serif;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    border-left: 1px solid white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.contato p{
+    margin-top: 6%;
+    margin-left: 5%;
+}
+
+.rodape_ifsc{
+    flex-basis: 50%;
+    margin-top: 25px;
+}
+
+.ifsc{
+    max-width: 50%;
+}
+
+.linha{
+    width: 1px;
+    height: 70%;
+    border-right: 1px solid white;
+    margin-top: 2%;
+    margin-right: 60%;
+    float: right
+}
+
+
+
+/* Medias Screen Para Ajustas Detalhes ----------------------------------------------------------------------------------------------------------------------------------------*/
+/* Width: 1550 */
+@media screen and (max-width: 1550px){
+    .suarez{
+        max-width: 200%;
+    }
+    
+}
+
+/* Width: 1450 */
+@media screen and (max-width: 1450px){
+    .bh1{
+        max-width: 100%;
+    }
+    
+}
+
+/* Width: 1250 */
+@media screen and (max-width: 1250px){
+    .suarez{
+        max-width: 180%;
+    }
+    
+}
+
+/* Celular---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:900px){
+
+    /* Nav --------------------------------------------------------------------------------------------------------------------------------- */
+    .nav{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        background-color: white;
+        max-width: 100%;
+        height: 12%;
+        gap: 16px;
+    }
+
+    a img{
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+
+    .nav-link{
+        padding: 0;
+        font-size: 70%;
+    }
+
+    .justify-content-center {
+        justify-content: space-around;
+    }
+
+    .logo{
+        max-width: 56px;
+    }
+
+    .logo_pc{
+        display: none;
+    }
+
+    .logo_mobile{
+        display: inline-block;
+    }
+
+    li{
+        margin-top: 33px;
+    }
+
+    /* Início --------------------------------------------------------------------------------------------------------------------------------- */
+    /* Grid */
+    .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "branco"
+            "amarelo"
+            "azul"
+        ;
+    }
+    
+    .amarelo{
+        grid-area: amarelo;
+        display: block;
+        background: linear-gradient(to top,#FFC601,#FFFFFF);
+        height: 100px;
+    }
+    
+    /* Azul */
+    .azul{grid-area: azul;
+        display: block;
+    }
+
+    .usuarios{
+        text-align: right;
+        margin: 5%;
+    }
+    .usuarios h1{
+        font-size: 300%;
+        margin-right: 8%;
+    }
+
+    .estrelas{
+        max-width: 50%;
+    }
+
+    .suarez{
+        transform: scaleX(-1);
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        max-width: 65%;
+    }
+
+    /* Detalhes do Branco */
+    .branco{
+        grid-area: branco;
+        display: block;
+        text-align: center;
+    }
+
+    .social{
+        float: none;
+        margin: 0;
+        margin-top: 10px;
+        max-width: 30%;
+    }
+
+    .col h1{
+        font-size: 250%;
+        /* margin: 0; */
+    }
+
+    .col-8{
+        max-width: none;
+    }
+
+    .branco .row .col{
+        padding-bottom: 2%;
+    }
+
+    .pro{
+        text-align: left;
+        font-size: 75%;
+    }
+
+    h3{
+        text-align: left;
+        font-size: 90%;
+    }
+
+    .grid_propaganda{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "sociais sociais"
+            "titulo titulo"
+            "prop1 prop2"
+            "prop3 prop4"
+        ;
+    }
+
+    .col_sociais{grid-area: sociais;}
+    .col_titulo{grid-area: titulo;}
+    .col_prop1{grid-area: prop1;}
+    .col_prop2{grid-area: prop2;}
+    .col_prop3{grid-area: prop3;}
+    .col_prop4{grid-area: prop4;}
+
+    /* Notícias --------------------------------------------------------------------------------------------------------------------------------- */
+
+    .row_noticias{
+        display: block;
+    }
+
+    .sec1, .sec2{
+        max-width: none;
+    }
+
+    .etiqueta_noticias{
+        left: 75%;
+        top: -7%;
+        max-width: 50%;
+    }
+
+    .texto_noticias{
+        font-size: 80%;
+    }
+
+    .texto_noticias, .titulo_noticias, .hoje{
+        margin-left: 7%;
+    }
+
+    .nominhos{
+        text-align: center;
+    }
+
+    .col div{
+        margin-left: 0;
+    }
+
+    
+    .carrossel{
+        padding: 0;
+    }
+    
+    .categoria{
+        font-size: 90%;
+    }
+    .notitulo{
+        font-size: 70%;
+    }
+    .desc_noticia{
+        font-size: 60%;
+        margin: 0;
+    }
+
+    .grafico{
+        top: 15%;
+        left: 5%;
+    }
+
+    .statsp{
+        font-size: 90%;
+        margin: 0;
+    }
+
+    h2{
+        font-size: 250%;
+        margin-top: 30%;
+    }
+
+    h4{
+        font-size: 100%;
+        font-weight: bolder;
+    }
+
+    .x .col img{
+        max-width: 50%;
+    }
+
+    .estatistica{
+        font-size: 100%;
+    }
+
+    .top1{
+        font-size: 100%;
+    }
+
+    .pedro{
+        text-align: right;
+        right: 3%;
+        bottom: 1%;
+    }
+    
+    
+    .luxemburgo{
+        text-align: left;
+        left: 2%;
+        bottom: 1%;
+        top:auto;
+    }
+    
+    .cano{
+        text-align: right;
+        bottom: 0%;
+        right: 3%;
+    }
+    
+    
+
+    .felipao{
+        text-align: left;
+        left: 2%;
+        bottom: 0%;
+    }
+    
+    .grenal{
+        bottom:3%;
+        left: 25%;
+    }
+    
+
+    /* Tabela --------------------------------------------------------------------------------------------------------------------------------- */
+    .row_tabela{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "tabela"
+            "tabela_amarelo"
+        ;
+    }
+
+    .tab{grid-area: tabela;}
+    .tabamarelo{
+        grid-area: tabela_amarelo;
+        min-height: 300px;
+        background: linear-gradient(to top,#FFC601,#FFFFFF);
+    }
+
+    .planilha{
+        max-width: 10%;
+        left: 7%;
+    }
+
+    .titulos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "Brasileirao"
+            "TABELA"
+        ;
+    }
+
+    .tab h1{
+        font-size: 300%;
+        grid-area: TABELA;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .tab h4{
+        font-size: 150%;
+        font-weight: bold;
+        grid-area: Brasileirao;
+        margin-bottom: 10px;
+        margin-left: 0;
+        text-align: center;
+        padding-top: 20%;
+    }
+
+    .tab p{
+        margin-right: 0;
+        font-size: 100%;
+    }
+
+    .botao_azul{
+        margin-bottom: 0;
+        margin-left: 50%;
+        margin-right: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+  
+
+    .tri{
+        width: 100%;
+    }
+
+    .bh1{
+        display: none;
+    }
+
+    .bh2{
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: -15%;
+    }
+
+    .modal {
+        max-width: 200%;
+        width: 200%;
+    }
+
+
+
+    .table{
+        max-width: 450px;
+    }
+
+    .modal{
+        max-width: 320px;
+    }
+
+
+    /* Lances --------------------------------------------------------------------------------------------------------------------------------- */
+
+    iframe{
+        max-height: 40%;
+        max-width: 115%;
+        margin-left: 5%;
+        min-width: 0;
+        min-height: 0;
+        position: static
+    }
+
+    .sec2_lances{
+        max-width: 100%
+    }
+
+    .sec1_lances{
+        max-height: 410px;
+        margin: 0
+    }
+
+    .rodada_lances{
+        margin-top: 25%
+    }
+
+    .titulo_lances{
+        margin-bottom: 15%
+    }
+
+    .etiqueta_lances{
+        right: -15%;
+        max-width: 25%;
+    }
+
+    .texto{
+        margin: 8%;
+        margin-left: 7%;
+        max-width: 110%
+    }
+
+    .gabigol{
+        margin-bottom: 15%;
+        margin-left: 10%
+    }
+
+    .dudu{
+        margin-left: 10%
+    }
+
+    /* Rodapé --------------------------------------------------------------------------------------------------------------------------------- */
+
+    #rodape .row{
+        padding-bottom: 24%;
+
+    }
+
+    .contato{
+        margin-left: 1%
+    }
+
+    .contato p{
+        font-size: 40%;
+        margin-top: 16%
+    }
+
+    .rodape_ifsc{
+        margin-bottom: 1%;
+        margin-left: 7%
+    }
+
+    .rodape_logo{
+        margin-top: 7%;
+        margin-left: 1%;
+        margin-right: 1%
+    }
+}
+
