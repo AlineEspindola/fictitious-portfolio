@@ -80,7 +80,7 @@ h3{
 }
 
 .modalJornada .conteudo,.modalProjetos .conteudo{
-    margin: 8% auto;
+    margin: 7% auto;
     text-align: center;
     background-color: rgba(0, 0, 0, 0); 
     color: white;
@@ -89,6 +89,11 @@ h3{
 
 .modalProjetos .conteudo p{
     font-size: 17rem ;
+    padding-left: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100%;
+    max-width: none;
 }
 
 .corpo::before {

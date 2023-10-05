@@ -89,7 +89,8 @@ function animacaoTexto2(p2, texto2, intervaloJornada){
 
 // Modal dos Projetos
 // Aleatorizar Números
-let intervaloProjetos=10;
+let intervaloProjetos1=10;
+let intervaloProjetos2=5000;
 let min=1;
 let max=30;
 const textoProjetos=document.querySelector(".textoProjetos");
@@ -103,7 +104,12 @@ nav[4].addEventListener("click", function(){
 
         textoProjetos.innerHTML=sorteio;
 
-    }, i*(intervaloProjetos+=5))
+    }, i*(intervaloProjetos1+=5))
+    
+    setTimeout(function(){
+        h3.innerHTML="Projeto Selecionado!";
+    }, intervaloProjetos2)
+
 }
 
 })
