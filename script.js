@@ -89,7 +89,6 @@ function animacaoTexto2(p2, texto2, intervaloJornada){
 
 // Modal dos Projetos
 // Aleatorizar Números
-let intervaloProjetos1=10;
 let intervaloProjetos2=5000;
 let intervaloProjetos3=5500;
 let min=1;
@@ -98,9 +97,10 @@ const textoProjetos=document.querySelector(".textoProjetos");
 const h3=document.querySelector(".titulo");
 
 nav[4].addEventListener("click", function(){
+    let intervaloProjetos1=10;
     for(var i=min; i<=max; i++){
         setTimeout(function(){
-        let sorteio= Math.random()*3;
+        let sorteio= Math.random()*5;
         sorteio=Math.ceil(sorteio);
 
         textoProjetos.innerHTML=sorteio;
@@ -118,9 +118,14 @@ nav[4].addEventListener("click", function(){
             window.open('projetos/Futebola');
         }else if(textoProjetos.innerHTML==3){
             window.open('projetos/trabalhodeartes');
+        }else if(textoProjetos.innerHTML==4){
+            window.open('projetos/alaris_imobiliaria') //não está abrindo
+        }else if(textoProjetos.innerHTML==5){
+            window.open('projetos/chat2023')
         }
         modalProjetos.style.display="none"
         body.classList.remove("corpo")
+        nav[4].style.borderBottom="none"
         aux=true
     }, intervaloProjetos3)
 })
