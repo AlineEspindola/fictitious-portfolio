@@ -7,8 +7,8 @@ aux=true;
 
 for(let i=1; i<nav.length; i++){
 
-    // Abrir modals
-    nav[2].addEventListener("click", function(){
+// Abrir modals
+nav[2].addEventListener("click", function(){
     modalJornada.style.display="block"
     body.classList.add("corpo")
     aux=false
@@ -40,6 +40,7 @@ fechar.addEventListener("click",function(){
 })
 }
 
+
 // Jornada
 // Animação de Digitação do texto
 const p1=document.querySelector(".texto1");
@@ -49,8 +50,8 @@ const texto2="Essa paixão me levou a buscar conhecimento e aprimoramento, e ent
 const intervaloJornada=40; 
 
 function animacaoTexto1(p1, texto1, intervaloJornada){
-const letra1=texto1.split("").reverse();
-const digitador1=setInterval(()=>{
+    const letra1=texto1.split("").reverse();
+    const digitador1=setInterval(()=>{
 
     if(!letra1.length){
     clearInterval(digitador1);
@@ -64,12 +65,11 @@ const digitador1=setInterval(()=>{
 }, intervaloJornada)
 
 }
-
 animacaoTexto1(p1, texto1, intervaloJornada);
 
 function animacaoTexto2(p2, texto2, intervaloJornada){
-const letra2=texto2.split("").reverse();
-const digitador2=setInterval(()=>{
+    const letra2=texto2.split("").reverse();
+    const digitador2=setInterval(()=>{
 
     if(!letra2.length){
     clearInterval(digitador2);
@@ -84,7 +84,7 @@ const digitador2=setInterval(()=>{
 
 }
 
-// Projetos
+// Modal dos Projetos
 // Aleatorizar Números
 let intervaloProjetos=10;
 let min=1;
@@ -93,14 +93,14 @@ const textoProjetos=document.querySelector(".textoProjetos");
 const h3=document.querySelector(".titulo");
 
 nav[4].addEventListener("click", function(){
-for(var i=min; i<=max; i++){
-    setTimeout(function(){
-    let sorteio= Math.random()*3;
-    sorteio=Math.ceil(sorteio);
+    for(var i=min; i<=max; i++){
+        setTimeout(function(){
+        let sorteio= Math.random()*3;
+        sorteio=Math.ceil(sorteio);
 
-    textoProjetos.innerHTML=sorteio;
+        textoProjetos.innerHTML=sorteio;
 
-}, i*(intervaloProjetos+=5))
+    }, i*(intervaloProjetos+=5))
 }
 
 })
