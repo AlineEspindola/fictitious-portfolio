@@ -49,6 +49,10 @@ const texto1="Sou uma designer de interfaces de usuário (UI) com uma paixão pr
 const texto2="Essa paixão me levou a buscar conhecimento e aprimoramento, e então decidi cursar Ciência da Computação na renomada Universidade Federal de Santa Catarina (UFSC). Durante minha graduação, mergulhei fundo nos aspectos teóricos e práticos da computação, o que me proporcionou uma compreensão sólida dos fundamentos tecnológicos.";
 const intervaloJornada=40; 
 
+nav[2].addEventListener("click", function(){
+    animacaoTexto1(p1, texto1, intervaloJornada);
+})
+
 function animacaoTexto1(p1, texto1, intervaloJornada){
     const letra1=texto1.split("").reverse();
     const digitador1=setInterval(()=>{
@@ -65,7 +69,6 @@ function animacaoTexto1(p1, texto1, intervaloJornada){
 }, intervaloJornada)
 
 }
-animacaoTexto1(p1, texto1, intervaloJornada);
 
 function animacaoTexto2(p2, texto2, intervaloJornada){
     const letra2=texto2.split("").reverse();
