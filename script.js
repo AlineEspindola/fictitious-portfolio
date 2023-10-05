@@ -91,6 +91,7 @@ function animacaoTexto2(p2, texto2, intervaloJornada){
 // Aleatorizar Números
 let intervaloProjetos1=10;
 let intervaloProjetos2=5000;
+let intervaloProjetos3=5500;
 let min=1;
 let max=30;
 const textoProjetos=document.querySelector(".textoProjetos");
@@ -105,11 +106,13 @@ nav[4].addEventListener("click", function(){
         textoProjetos.innerHTML=sorteio;
 
     }, i*(intervaloProjetos1+=5))
-    
+}
     setTimeout(function(){
         h3.innerHTML="Projeto Selecionado!";
     }, intervaloProjetos2)
 
-}
+    setTimeout(function(){
+        window.open('http://aline.aluno.vip/fashion_finds/', '_blank');
+    }, intervaloProjetos3)
 
 })
