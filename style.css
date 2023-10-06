@@ -97,7 +97,8 @@ h3{
 }
 
 .corpo::before {
-    content: "";
+    /* content usado para adicionar "conteúdo" , só que, como está vazio, deixará o conteúdo dessa parte inutilizavel*/
+    content: ""; 
     position: fixed;
     top: 0;
     left: 0;
