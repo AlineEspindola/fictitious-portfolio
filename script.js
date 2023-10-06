@@ -8,13 +8,13 @@ aux=true;
 for(let i=1; i<nav.length; i++){
 
     // Abrir modals
-    nav[2].addEventListener("click", function(){
+    nav[1].addEventListener("click", function(){
         modalJornada.style.display="block"
         body.classList.add("corpo")
         aux=false
     })
 
-    nav[4].addEventListener("click", function(){
+    nav[2].addEventListener("click", function(){
         modalProjetos.style.display="block"
         body.classList.add("corpo")
         aux=false
@@ -49,7 +49,10 @@ const texto1="Sou uma designer de interfaces de usuário (UI) com uma paixão pr
 const texto2="Essa paixão me levou a buscar conhecimento e aprimoramento, e então decidi cursar Ciência da Computação na renomada Universidade Federal de Santa Catarina (UFSC). Durante minha graduação, mergulhei fundo nos aspectos teóricos e práticos da computação, o que me proporcionou uma compreensão sólida dos fundamentos tecnológicos.";
 const intervaloJornada=40; 
 
-nav[2].addEventListener("click", function(){
+nav[1].addEventListener("click", function(){
+    p1.innerHTML="";
+    p2.innerHTML="";
+    fechar.style.display="none";
     animacaoTexto1(p1, texto1, intervaloJornada);
 })
 
@@ -96,7 +99,7 @@ let max=30;
 const textoProjetos=document.querySelector(".textoProjetos");
 const h3=document.querySelector(".titulo");
 
-nav[4].addEventListener("click", function(){
+nav[2].addEventListener("click", function(){
     let intervaloProjetos1=10;
     h3.innerHTML="Selecionando Projeto...";
     for(var i=min; i<=max; i++){
@@ -126,7 +129,7 @@ nav[4].addEventListener("click", function(){
         }
         modalProjetos.style.display="none"
         body.classList.remove("corpo")
-        nav[4].style.borderBottom="none"
+        nav[2].style.borderBottom="none"
         aux=true
     }, intervaloProjetos3)
 })
