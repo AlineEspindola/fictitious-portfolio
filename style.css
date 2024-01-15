@@ -125,6 +125,9 @@ h3{
     .img-fluid{
         max-width: 100% !important;
     }
+    .modalProjetos .conteudo p{
+        font-size: 5rem;
+    }
 }
 
 @media screen and (max-width: 1600px){
