@@ -125,8 +125,8 @@ h3{
     .img-fluid{
         max-width: 100% !important;
     }
-    .modalProjetos .conteudo p{
-        font-size: 5rem;
+    h3{
+        font-size: 2rem !important;
     }
 }
 
