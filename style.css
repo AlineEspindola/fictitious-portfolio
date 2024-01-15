@@ -111,11 +111,40 @@ h3{
 /* Alguns detalhes do responsivo */
 @media screen and (max-width: 1100px){
     h2{
-        font-size: 4.5rem;
+        font-size: 4rem !important;
+        padding-left: 10%;
     }
     p{
         font-size: 1.5rem;
         max-width: 90%;
+        padding-left: 10%;
+    }
+    .conteudo{
+        max-width: 100% !important;
+    }
+    .img-fluid{
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    h2{
+        font-size: 5rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    .img-fluid{
+        max-width: 80%;
+    }
+    .conteudo{
+        max-width: 42%;
+    }
+    .modalProjetos .conteudo p{
+        font-size: 7rem;
+    }
+    h3{
+        font-size: 3rem;
     }
 }
 

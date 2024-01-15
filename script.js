@@ -41,8 +41,8 @@ for(let i=1; i<nav.length; i++){
 
 const p1=document.querySelector(".p1");
 const p2=document.querySelector(".p2");
-const texto1="Sou uma designer de interfaces de usuário (UI) com uma paixão profunda por criar experiências digitais envolventes e esteticamente agradáveis. Minha jornada no mundo do design começou quando cursei um curso técnico de informática no IFSC, onde fui introduzida ao vasto e fascinante universo da computação. Durante esse período, minha curiosidade pelo design de interfaces foi despertada.";
-const texto2="Essa paixão me levou a buscar conhecimento e aprimoramento, e então decidi cursar Ciência da Computação na renomada Universidade Federal de Santa Catarina (UFSC). Durante minha graduação, mergulhei fundo nos aspectos teóricos e práticos da computação, o que me proporcionou uma compreensão sólida dos fundamentos tecnológicos.";
+const texto1="Com uma formação sólida em Design de Comunicação pela Universidade de Artes Visuais, minha jornada profissional começou em uma agência de design, onde, inicialmente focada em identidade visual, rapidamente me vi imersa no desafiante mundo do design de interfaces ao ingressar em uma startup de tecnologia.";
+const texto2="Ao longo dos anos, busquei aprimorar minhas habilidades participando ativamente de cursos adicionais em design de interação e usabilidade, além de me manter atualizada nas últimas tendências através de conferências e workshops.";
 const intervaloJornada=40; 
 
 nav[1].addEventListener("click", function(){
@@ -98,7 +98,7 @@ nav[2].addEventListener("click", function(){
     h3.innerHTML="Selecionando Projeto...";
     for(var i=min; i<=max; i++){
         setTimeout(function(){
-            let sorteio= Math.random()*5;
+            let sorteio= Math.random()*4;
             sorteio=Math.ceil(sorteio);
 
             textoProjetos.innerHTML=sorteio;
@@ -112,15 +112,13 @@ nav[2].addEventListener("click", function(){
 
     setTimeout(function(){
         if(textoProjetos.innerHTML==1){
-            window.open('http://aline.aluno.vip/fashion_finds/', '_blank');
+            window.open('https://reptors-timequake.vercel.app/', '_blank');
         }else if(textoProjetos.innerHTML==2){
-            window.open('projetos/Futebola');
+            window.open('https://github.com/Thiago0808/ChaThi');
         }else if(textoProjetos.innerHTML==3){
-            window.open('projetos/trabalhodeartes');
+            window.open('https://github.com/AlineEspindola');
         }else if(textoProjetos.innerHTML==4){
-            window.open('projetos/parisatabriz') 
-        }else if(textoProjetos.innerHTML==5){
-            window.open('projetos/cadastropetshop/petshop.html') 
+            window.open('https://github.com/Thiago0808') 
         }
         modalProjetos.style.display="none"
         body.classList.remove("corpo")
