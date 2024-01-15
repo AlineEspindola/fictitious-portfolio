@@ -21,7 +21,7 @@ https://github.com/AlineEspindola/PortfolioFicticio/assets/117865319/3d8294da-b1
 
 Este trabalho foi desenvolvido na disciplina de programação web do curso técnico de informática integrado ao ensino médio, na qual me formei em 2023, portanto, foi um projeto criado em um periodo de aprendizagem.
 
-A ideia era criar uma paǵina na temática que quiser e demonstrar a utilização de um código javascript, podendo insclusive ser bibliotecas de terceiros.
+A ideia era criar uma paǵina na temática que quiser e demonstrar a utilização de um código javascript, podendo inclusive ser bibliotecas de terceiros.
 
 Como podem visualizar no projeto, na época eu escolhi criar efeitos animados, sistemas de modal e menu interativo, e, portanto, decidi criar um portfólio fictício de uma UI designer.
 
