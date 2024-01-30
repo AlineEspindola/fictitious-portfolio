@@ -31,7 +31,16 @@ Com JavaScript puro, criei uma animação para o texto aparecer lentamente quand
 
 Mas a função mais interessante é a do item "projeto" no nav. Quando clica, aparece um número sendo aleatorizado diversas vezes, que vai diminuindo a frequência (vocês verão o vídeo para compreender melhor), até parar em um número que é de algum projeto, na qual fará ser aberto em outra aba.
 
+<hr>
 
+<div align="center">
+<h3>꧁ 🔴 Autoria: Aline Espindola 🔴 ꧂</h3>
+
+[![Behance](https://img.shields.io/badge/-Behance-blue?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/line14)
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aline-espindola-72034b285)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=alineabreuespindola@gmail.com)
+  
+</div>
 
 
 
