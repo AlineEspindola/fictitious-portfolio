@@ -42,6 +42,10 @@ Mas a função mais interessante é a do item "projeto" no nav. Quando clica, ap
   
 </div>
 
+<hr>
+
+### Licença: MIT
+
 
 
 
